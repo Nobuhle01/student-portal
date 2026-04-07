@@ -1,0 +1,49 @@
+/* Payment Page Heading */
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Pay Now Button */
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Payment Message */
+p {
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  font-size: 16px;
+  color: #34495e;
+  margin-top: 15px;
+  min-height: 24px; /* Prevents jumpy layout when message appears */
+}
+
+/* Optional success/failure coloring */
+p.success {
+  color: green;
+}
+
+p.error {
+  color: red;
+}

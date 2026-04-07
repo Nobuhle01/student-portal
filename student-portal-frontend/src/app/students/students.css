@@ -1,0 +1,44 @@
+/* Students List Container */
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Students List */
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto; /* Center the list */
+  background-color: #f7f9fb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Individual Student Item */
+li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Verdana', sans-serif;
+  font-size: 16px;
+  color: #34495e;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover Effect */
+li:hover {
+  background-color: #e3f2fd;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+/* Last item border removal */
+li:last-child {
+  border-bottom: none;
+}
