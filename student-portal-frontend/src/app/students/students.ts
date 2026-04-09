@@ -16,7 +16,7 @@ export class StudentsComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<any[]>('http://localhost:8080/students', { withCredentials: true })
+    this.http.get<any[]>('/students', { withCredentials: true })
       .subscribe({
         next: data => this.students = data,
         error: err => console.error('Error fetching students', err)

@@ -17,7 +17,7 @@ export class PaymentComponent {
   constructor(private http: HttpClient) {}
 
   pay() {
-    this.http.post('http://localhost:8080/payment', {}, { withCredentials: true })
+    this.http.post('/payment', {}, { withCredentials: true })
       .subscribe({
         next: res => this.message = 'Payment Successful (Mock)',
         error: err => this.message = 'Payment Failed: ' + err.message
